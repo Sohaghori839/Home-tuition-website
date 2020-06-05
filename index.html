@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Home Center</title>
+</head>
+
+<body>
+
+
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#"> <img class="logo" src="images.jpg" alt="Home tuition center"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> HOME</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rule.html">TUTOR ACADEMY RULES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reg.html">TUTOR REGISTRATION</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </section>
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <!--  <div class="view">
+        <img class="d-block w-100" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAREBUSEhAQFhMWEhYXExcRFhEVEhMWFhUWFhUSFxgYKCggGRolGxYWITEhJSkrMDo1Fx8zODMtNygtLi0BCgoKDg0OGxAQGjclHyYrLTIrLS8tNi0tLS0vLS0tLS0tNS4tLS4tLS0tLS0tNS0tLS0tLS0tLS0tLS0tLy0tLf/AABEIAKQBNAMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUCAwYBB//EAEcQAAIBAgIFCQIKCAQHAAAAAAABAgMRBCEFEjFRoQYTFUFhcYGR0SKxFzJCUlNykrLS8BQjMzVio8HhBxZUgiQ0Q0RzovH/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAwQBAgUGB//EADURAQACAQIEAwUHBAMBAQAAAAABAgMEERIhMVEFFEETYYGRsSIyQnHB0fAGIzOhUuHxYhX/2gAMAwEAAhEDEQA/AI8pNttttt3bebbe1s6DxHV4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuo4urBWhUnFXvaMpJX35dxiYiW9cl68qzMNJloAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABoxWNpUv2lSMd12rvuW1mtr1r1lNi0+XL/AI6zKD/mLC3/AGn/AK1PQj8xj7rX/wCVqv8Aj/uP3S8NpGjUyhVg3uv7Xk8zeuStukq+XSZsXO9Jj6McXpSjSerOautqSlJrvtsMWy0r1lth0OfNHFSvL5fVvw2JhUWtCSkuzq7Guo2raLRvCHLhyYrcN42ltNkYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAo9P6YdN81S/aNZvaoJ/1K+bNw/Zr1dfw3w6M39zJ930jv8A9Oc5hX1qknKT2tt5/wBWUtvWXpaxFY4axtDK1PZaPikveOTPNqxOGgle6XfsMTEMxKPh6lp3b27b9d95iJ5s7ctoWeGxnNTVSLyi0p22Sg9qfdtRLS/DO8Kuq00ajFNJ6+nul250nigAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADViayhCU3sjFvyV7GLTwxMpMWOcl4pHrOziZT1bzm7yk7yfW293YcyZ9Ze3pSK1itekdG7RmBxeKbWHoOSTs5ZKC75Oyv2bSO2WK9U1MVrdIStO8msdhqXOVYU3T+VKk3Pm/r3St3q67TSuaLcob3wWpG8qilRtm0pcXbqaJYhDu3ypqS3rqfWbbbsIdGg5T5rWUU5Wbk0ku277DWsbzwtcuT2dJvtvt6Q+jRtZW2WyOs8LO+/N6GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEDTl/0ef8At8taNyLN9yV7w2InVU39/wBJc1oSjhq2J/4uq4UI7VFTc6m6C1U7Lrb8tuXLyWn0e1xUiZ59H2fklTpKk+YxHO0Lrmk4wUqKSzptpJvq2q++5Vt16L0RtHuXNajGaakk01Z3609qNdm274pyn0dhqFeSw1alOk5P2ITjKVGSftU2turtt4rqLmK0zG1lDPSKzvXopkrX8yZAi4elKrN6sVJqGu4P5aWrrR78+BitZtPJDqMtcdY4p2iZ237dpdtoihCFGKp62o1rJSd3HWz1To46xFeTyWsyXvmmcm28cp29dvVMN1UAAAAAAAAAAAAAAAAAAAAAAAAAGqGG57E0aDlKMaknrOPxrJXyNbztC3o8UXvtLqfg/wAL9NivtU/wkXHLr+Rx95/nwPg/wv02K+1T/COOTyOPvP8APgfB/hfpsV9qn+Eccnkcfef58D4P8L9NivtU/wAI45PI4+8/z4Hwf4X6bFfap/hHHJ5HH3n+fA+D/C/TYr7VP8I45PI4+8/z4Hwf4X6bFfap/hHHJ5HH3n+fBqxfIzDUqVTOrPWpSV6ji9R2upRslaV1t7CnrMt4iNum/N0vDdFhi9pmN525b/p71VyO5MqroWUJRg54hc9Ses6bjN3pqMpJPWioJSSeV3LZk1BN4jesujXHbaLR8V7yI5KzwEPaqpynG1SCcpRvF3pzu/lWck0sso9pFlmJ6dU+KLR16OkxE5Ri3CnKpP5MI2vKT2K7yS3t5JXZHWs2naElrRWN5fJ+WGncSqk8HVp4Z3k040ac/wBVOLTTVR2u79ffdK5PFIrO+6CbcdenKXI4mpaL37PFliZU4S+R1JutKXVGnbxk1b7rJdLH2plyfG7xGGte8/T/ANdgX3mAAAAAAAAAAAAAAAAAAAAAAAAAAAMtFfvDC/Wl91ml+i/4f/kfTyB6BJpU/wBXKThdZaretvStk+819W0Ry3Zyw6eolG19W7tLdd53tv6uobm3R66EbtxipeynGN5NbbS7XazG5s8pUItK6s71Ms+pXSv1WG5EQcyrU/Z+M43ftZ3ey97cBubdGvGQirWSzT2Xtta68xDEwi1IKScXsaafjkZmN2Inbmo+Q8HHR2Gi9sKWpLslBuEl5pnMz12tv3dvS34qbdlx+kRu4qUdZdTeav2EH5Lfs7bb7cmyDas+vs3iJmGkxE8kTSOi6FfnNanFSq83zs4JKpPm3eOfyX/FGzyWeSJfayhjBWOnyfJtFaOprSVOlVhTdH9HrTcaiUoajrYhUm9b+B089pvM2tX7PXf9kP2Mdt8kxEbTvv09UrR+joUNeMNkqk5Lb8XWepHPdGy8zr4MfBSInr6vD+I6vzGabV+7HKPy7/FLJlEAAAAAAAAAAAAAAAAAAAAAAAAAADLRX7wwv1pfdZpfov8Ah/8AkfTZTS29ewqXy0p96XpceG+TfhjouNIyUaSguxPwzfGwrzkvyjZUkiIAAAAACNhMGqUZRhsdSc0upOpJzmvGTk/EgzYuOvLqs6fP7O+89PVB0noxVpKcZuE0tWWUfajts1JNPyZzfuztL0GHPHB15ekxPT+e9hovRk6cnOrVu7JKMWowslZXSSvl2GJndLkzVmvBXeffO2/+kjSWkoU43by4y7EjOPHbLbho5uq1WLS4/aZZ/KPWfdH8/N8youVbE1sVNW1moUlupwyuuxtcL9Z2dNhjH0/nveM8V11s8Vrbr1n3TPSPhH+04tOOAAAAAAAAAAAAAAAAAAAAAAAAAAAAy0V+8ML9aX3WaX6L/h/+R9O1rNZxXXeWxbm+y5y9VP2qw9loKzw2nrHZli3F1XZRvZOVs/ae2z3ZlTLMcfL+Su4Yn2cb/D8muk8vF+86OmtNscTLk6usVyzEMydWAAAAAA1YlLV2Z9RW1fD7OZnr6Lei4vaxETy9VfisPNbHbyt5nHtEw71bR6uT02nzive+rbPsZ2PC5/t2j3/o8b/VNdtTS3pNf1n91ekdN5kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAy0V+8ML9aX3WaX6L/h/+R9JxEW1l/Q5eqxWtMTWHsNDnpj3i07IyvF9aOdatqTtMbOrW9bxvWd02mrJI6WlyxwxRydbhtFpyR0+jIuKAAAh6R0nRoK9SaTeyKznLuis/HYbUpa/SEuPDfJO1Yc5X5R1qr/Vrm4LudSXe9ke5eZdx6aI525upg0Fa878/oiyx1bNqrUv9aRN7OnaFv2GLbbhj5O0pzjJKSd00mn2PrPJ5LXmdr9YR0x0p92NmUo3VmRpHMcpaEfZv8e+W+3XLu6vFF3wzHknN9n7vr+nxQavRYNZWK5o326c9vz+EqOWFXVdcT0M4Y9HJz/01p7R/atNZ+cfv/tGnBrb/APSC1Zr1eV1uhzaTJwZI/KfSfyYmqmAAAAAAAAAAAAAAAAAAAAAAAAAABlor94YX60vus0v0X/D/API+nkD0DCrT1l7iHNhjLXb19E+nzzhtvHT1aKNW3sv89hyoi1bcE9Xcm1bU446JMMM4xTTeS2Ntu3e82dqN9ubi32tMomK0rQpx1p1YJXayacrrbFJZt9hvFLTO0QjrhvadohzGkuVVSd40VzcfnSs6j7lsjxfcW8eljrZ0cOgiOd+agk22223J7XJtyfe2W4iI5Q6NaxWNoWFGFopBszDKfgNJOjTnGL9qTWqtqjt1p22bjn6nRxmy1menr7+0NJrvL16axFvjrvUYX4qxmPDNPv0n5nBCDUqSk3KTbk9reb/PYXMeOuOvDWNobRGyNip5Nddr+F0vz3G5MosXlby7zW9eKNlDxDRV1eCcc9esT2n+cp9zxFN83tWazNbdY6gYAAAAAAAAAAAAAAAAAAAAAAAAABlor94YX60vus0v0X/D/wDI+nkD0AwzCr0Jo506lSpUqa0qk3K3yIrZFJb7WV+xG2ThtMTt0Xr5d6xSvRY6cx8aFGU3ttkt7exfntGOnHaIaYqTe0VfL2rtydrt3b623tZ1tnbiIh5KSW1hndhGsm7K/kY3a8ULeLujKR6AAAeSaSu9i2hhWYeo585L6vgrvIxDSs77yGWzJ+/8v89pWy12nd4n+otH7PNGavS3X84/ePpIRPPAAAAAAAAAAAAAAAAAAAAAAAAAA10MVGji8PWndU4yes0m7XVtiNLxvC7obxW+8u1/zpo//Ufy634SLgl2vNYu5/nTR/8AqP5db8I4JPNYu7GXLLR7/wC4/l1vwjhlvXW4o9XM8oeUUMRUjGnK9KGzanKTWcrOzy2Lx3lvTxFefq62h1OC33bc+3T6qirjUltS7yxa8R1Xc2rx4Y3vbZO0ctH/ABsRjG/4acK3GTj7l4la+a34YcrJ4xi/B85XuJ03oz9HnRw84qUkkkqdVOTUk7OTWezrZHjm05ImyLTa6t9RXitvz+qrw9dWs8rHQelbnVj85eYHsZp7GgMmGWv9ErYj9XQg5ttazWUYrtk8jTJetY5oc2StI5yudHchq0Ludamrqzik3xdu3qKvm6xPRTjW1ieUKTS+jJ4apzc3F3WsnHY021fgWseSMkbwuYssZK7whIzeu8KviOk81prY/XrH5x0/Z6U3zYAAAAAAAAAAAAAAAAAAAAAAAAAHjV9oGPMx+bHyQZ4p7nMx+bHyQOKe5zMfmx8kDinuczH5sfJA3nuc1H5sfJA4p7nMx+bHyQOKe7fgMJTnVpwkkoynGLaSurtK6MTyjdLh+1krWZmN5jm+h0OTWDh/0dZ/xOUv7eSIbam8+r3E6nLP4ntbk5hZL/l7fU1ovgI1OSPUjU5Y/Eo9I8jbZ0aj+rVyfhJf1XiWKayPxQs49b/zj5K3RvJ+cpSeIvSpQftym0r9kW8v92wkzamtK7xO6e+ojlGP7Uz0iObpo8o9HYeChGrFRWyNFSl5yW1nKvni072lDHh2ryzvNfnyQK/+IeBg7KlWa3ydON/OVyP21eyxHgmb8V6x8Z/ZU6W5aYTGQ5mnRkqjacJNxajZ3bdr2Vk/MsaTN/diIjqkp4ZbBPHN4n3c+alcLda8Gdpu8/PnmVcldrPn3jel9hq526W5x+v+/qEbkgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAl6JxlKjXhUqqThFt2irybs7W7bkOe8UpzdfwPQ5NXq4rj9ImZ3+X1leY7/ABOpQyp0Ev8AyTSf2Y395QnP2h7+nge3+TJHwjf9nO4//FHFSvqasd2pDNeM7+40nLaVmnhelr13t8dvo53G8s8dVydep3KTXCNlwNZtM9ZWaafBT7uOPlv9UTGcocTUjqTqTdvnSnK3cpPJmOqWsVpzpWIn3RssuSfJ14xTq1qk44emnrSTzlK13FXvZJZt9xHe/D0Q5s812iOcqB4fXqSjQjUnHWlqWi5TcbvVbSW21jevOG82isb2nZ33I/kbVWHnWqwnCrLKEZqzUFtunmnJ+5bzoaKfZ24rR1cnVa+vtIpXnX1n+dmirScXZo7TdhKV5Pckorw28fcV8083jv6lzUtkpjjrG+/x22ekLzIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPJRTVmk09qexmJiJ5S2pktjtFqTtMescpV2N5MQnHWpS1ZNX1XnB93WuJHk8PraN8c7T29H1Tw3V3vpcdsk7zNY3n16KzDcncTrrWpxspK+tONpJPNZX29xUjQ555bbfF0Zz026vrWjJ4VU0qcKcWl8W0YtPs/sU8+lzYudo5d45woWtaZ33ZaU0fQxKtWo0522Nr2l3NZrwKXHMdGaTNekmEwVKlSVGEEqaTWrtjntvfbe72mOKd9yZmZ3lJoc3SjaFOnCPXqpRXfkTRnyTaJ33lBbFWd9/VaYDFxqw1oyjLqbi01ddx2KzMxEzGzkZKTS01cly2wqhJSha83aWy6y+Mu3+xdwZpivDPwYzeJxpME785/D/O0OYSMPD3va9ptad5nqBqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABPpfFXcvcXa/dh9N8PjbSYon/hX6QzMrYBsp4icdk5LubsRX0+K/O1Yn4D2piqrTXOTV1a6bTXbkaRo8Efgj5CkwmIqKd3OWtF3Tk22n49xpela9I2eR/qKLUtiy1nnG8fHlMfq6HRGl6OHhNwVRSm0+bVlTjK1m4y2qLyyztYivE223QT45W+OJvX7cfKfiqsdjJ1puc3d9W5LcjMRERycLPnvmvx3/wDEcyhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMMT0WKLtekPqmCvDirHaI+j0ymAAACBicM1PXWx/GW7tI8ld4cbxvSzm0tpr1jn8uv+t2BVfPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KzS7UZiN52SYcftMlad5iPnOyXz/AOs1F1Ru/NWXvLu/PZ9T357Q3BsAAAHkpW80vPJBhDxFOz7H+bFXJThl4Hxvw+NLm46R9i3T3T6x+sf9NRG4oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzij7T2LPv3Lzsb0+86fg2Pj1tPdvPyj99mvQ0nKc5Pa1n4v+xYr1fQcfOZlbG6UAAAI+PdqcnuV13ppr3GLdGtuj1yVSCatmrrf3Gt44quf4ppo1WktSOu28fnH79PiiFR83AyAALnGaJpwqTipTtGTSu43snbcRxedl2+mrW0xEy09HQ3y4ehnilp5evc6Ohvlw9BxSeXr3Ojob5cPQcUnl69zo6G+XD0HFJ5evc6Ohvlw9BxSeXr3Ojob5cPQcUnl69zo6G+XD0HFJ5evc6Ohvlw9BxSeXr3Ojob5cPQcUnl69zo6G+XD0HFJ5evc6Ohvlw9BxSeXr3Ojob5cPQcUnl69zo6G+XD0HFJ5evc6Ohvlw9BxSeXr3Ojob5cPQcUnl69zo6G+XD0HFJ5evc6Ohvlw9BxSeXr3Ojob5cPQcUnl69zo6G+XD0HFJ5evc6Ohvlw9BxSeXr3Ojob5cPQcUnl69zo6G+XD0HFJ5evc6Ohvlw9BxSeXr3Ojob5cPQcUnl69zo6G+XD0HFJ5evc6Ohvlw9BxSeXr3VuncMoQjZvOVs7bmyTFO8u34FgrXPa3/AM/rCopVpQd4ya7ixE7PVxMx0TcPpSo3Z6r8M+BtFpbxeVvRqNrqN4SxLyvUcVlYSTKor6UqXstVdyz4kc2lFN5QqtWUneUm+9mu7SZmWAYdVQwEXCLbldxTezrXcVZtzfP82mrGS0R3n6s+job5cPQxxSi8vXudHQ3y4eg4pPL17r/QPJXD1qTnOVW+u1lKKVkl2dpHbLMSvabQYslN7TPV/9k="
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">HOME TUITION</h3>
+        <p>First text</p>
+        <button><a href="contact.html">Contact</a></button>
+      </div>
+    </div>
+    <div class="carousel-item">-->
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100"
+            src="slider.jpg"
+            alt="Second slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h1 class="h1-responsive">HOME TUITION</h1>
+          <h4> For tutor Registration please click here</h4>
+          <button><a width="100px" href="contact.html">Contact Us</a></button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100"
+            src="slider2.jpg"
+            alt="Third slide">
+          <div class="mask rgba-black-slight"></div>
+        </div>
+        <div class="carousel-caption">
+          <h1 class="h1-responsive">HOME TUITION</h1>
+          <h4>For tutor Registration please click here</h4>
+          <button><a width="100px" href="contact.html">Contact Us</a></button>
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!---- center body-------->
+  <div class="D-87">
+    <div class="text0">
+      <p>
+        OUR TUITION ACADEMY Provides home tuition in karachi <br>For All Classes All over Karachi. (FILL THIS ONLINE
+        FORM AND OUR ACADEMY REPRESENTATIVE WILL CONTACT YOU )<br>CALL 0310-2607610
+      </p>
+    </div>
+    <div class="text1">
+      <h5>Who are you</h5>
+      <input type="radio" name="need home tutor" value="" /> I Need Home Tutor
+    </div>
+    <input type="radio" name="need home tutor" value="" />I am a Home Tutor and I want to teach</br>
+
+    <tr>
+      <h5>NAME:</h5>
+      <td><input type="text" name="Name" value="" maxlength="30" />
+      </td>
+    </tr> </br>
+
+    <tr>
+      <h5>PHONE NO:</h5>
+      <td><input type="text" name="number" value="" maxlength="30" />
+      </td>
+    </tr> </br>
+
+
+    <tr>
+      <h5>AREA:</h5>
+      <input type="radio" name="area" />DHA</br>
+      <input type="radio" name="area" />CLIFTON</br>
+      <input type="radio" name="area" />GULSHAN-E-IQBAL</br>
+      <input type="radio" name="area" />GULISTAN-E-JAUHER</br>
+      <input type="radio" name="area" />PECHS</br>
+      <input type="radio" name="area" />TARIQ ROAD</br>
+      <input type="radio" name="area" />KARSAZ</br>
+      <input type="radio" name="area" />NORTH NAZIMABAD</br>
+      <input type="radio" name="area" />MALIR</br>
+      <input type="radio" name="area" />KORANGI</br>
+      <input type="radio" name="area" />NORTH KARACHI</br>
+      <input type="radio" name="area" />SADDAR</br>
+      <input type="radio" name="area" />OTHER</br>
+    </tr></br>
+
+    <tr>
+      <h5>SUBJECTS :</h5>
+      <input type="checkbox" name="subj" />MATHEMATIC</br>
+      <input type="checkbox" name="subj" />SCIENCE</br>
+      <input type="checkbox" name="subj" />ENGLISH</br>
+      <input type="checkbox" name="subj" />COMPUTER</br>
+      <input type="checkbox" name="subj" />SOCIAL STUDIES</br>
+      <input type="checkbox" name="subj" />URDU</br>
+      <input type="checkbox" name="subj" />ISLAMIT</br>
+      <input type="checkbox" name="subj" />SINDHI</br>
+      <input type="checkbox" name="subj" />BIOLOGY</br>
+      <input type="checkbox" name="subj" />CHEMISTRY</br>
+      <input type="checkbox" name="subj" />PHYSICS</br>
+      <input type="checkbox" name="subj" />MATRIC</br>
+      <input type="checkbox" name="subj" />FSC(pre-eng)</br>
+      <input type="checkbox" name="subj" />OTHER</br>
+    </tr> </br>
+
+    <tr>
+      <h5>MENTION YOUR CLASS :</h5></br>
+      <input type="text" name="mention class" /><br>
+    </tr> </br>
+
+    <tr>
+      <td colspan="2" align="center">
+        <button><a href="home.html">Submit</a></button>
+        <button><a href="index.html">Reset</a></button>
+      </td>
+    </tr>
+  </div>
+
+
+  <!---- img --->
+  <div class="checkdiv-td">
+    <div>
+      <img src="university-home.png" alt="" width="300px">
+    </div>
+    <div>
+      <h2>Flexibility</h2>
+      <p>Our home tuition connect,<br> students and parents together</br> through a few simple clicks</br> of our
+      intuitive website.</br></p>
+    </div>
+    <div>
+      <img src="ondemand-home.png" alt="" width="300px">
+    </div>
+    <div>
+      <h2>On Demand</h2>
+      <p>Make time work whenever, wherever you are.</br>From our headoffice </br>Common, we cover
+        Karachi Pakistan,</br> "Our aim do make a bright pakistan"
+
+      </p>
+    </div>
+  </div>
+
+  <div class="checkdiv-ttd">
+    <div>
+      <img src="geolocation-home.png" alt="" width="300px">
+    </div>
+    <div>
+      <h2>Convenience</h2>
+      <p>Need a tutor quickly?</br> Wish to schedule a tutor for ongoing sessions?</br> Want to communicate about an
+        upcoming session?</br> Everything is done at the touch of a button.</br> Gone are the days of invoicing and
+        waiting for payment;</br> simple, cashless and secure.</p>
+    </div>
+
+    <div>
+      <img src="security-home.png" alt="" width="300px">
+    </div>
+    <div>
+      <h2>Safety & Support</h2>
+      <p>We believe in the Safeguarding of our</br> students and safety and support for our</br> tutors. home tuition
+        offers
+        industry leading</br> Insurance for every tuition session.</p>
+    </div>
+
+
+  </div>
+
+  <div class="tuition-img">
+    <div class="bshuja">
+      <img src="education01.jpg" width="230px" alt="">
+    </div>
+    <div>
+      <img src="education02.jpg" width="230px" alt="">
+    </div>
+    <div>
+      <img src="education03.jpg" width="230px" alt="">
+    </div>
+    <div>
+      <img src="education04.jpg" width="230px" alt="">
+    </div>
+    <div>
+      <img src="education05.jpg" width="230px" alt="">
+    </div>
+    <div>
+      <img src="education06.jpg" width="230px" alt="">
+    </div>
+  </div>
+
+  </div>
+
+  <div class="mainfooter">
+    <div class="rightfoot">
+      <h6>Get connected with us on social networks!</h6>
+    </div>
+    <div class="leftfoot">
+      <i><a href="https://www.facebook.com/" class="fa fa-facebook icon-tag"></a></i>
+      <i><a href="https://www.facebook.com/" class="fa fa-twitter icon-tag"></a></i>
+      <i><a href="https://www.facebook.com/" class="fa fa-instagram icon-tag"></a></i>
+      <i><a href="https://www.facebook.com/" class="fa fa-google icon-tag"></a></i>
+      <i><a href="https://www.facebook.com/" class="fa fa-linkedin icon-tag"></a></i>
+
+    </div>
+  </div>
+
+  <div class="finalfooter">
+    <div class="wegid">
+      <h6 class="foot-text">HOME TUITION</h6>
+      <p>Education should be a right, not a privilege</br> so we provide stander qulifiication.</br>Education most
+        powerfull weapon we can
+        ,</br>use to change the world.</p>
+    </div>
+
+
+    <div class="wegid">
+      <h6>CLASSES</h6>
+      <p>
+        <a href="#!">Nusry to Eight</a>
+      </p>
+      <p>
+        <a href="#!">Matric(science,General)</a>
+      </p>
+      <p>
+        <a href="#!">Fsc(pre engreeing)</a>
+      </p>
+      <p>
+        <a href="#!">Other courses </a>
+      </p>
+
+    </div>
+
+    <div class="wegid">
+      <h6>USEFUL LINKS</h6>
+      <p>
+        <a href="#!">Your Account</a>
+      </p>
+      <p>
+        <a href="#!">Become an Affiliate</a>
+      </p>
+      <p>
+        <a href="#!">Result Rates</a>
+      </p>
+      <p>
+        <a href="#!">Help</a>
+      </p>
+    </div>
+
+    <div class="wegid">
+      <h6>CONTACTS</h6>
+      <p>
+        <i class="fa fa-home mr-3 "></i> Karachi , Darul-salam, Pakistan</p>
+      <p>
+        <a class="fa fa-envelope mr-3"></a>Hometuition@gmail.com</p>
+      <p>
+        <i class="fa fa-phone mr-3 "></i> + 92 102 607 610</p>
+      <p>
+        <i class="fa fa-print mr-3 "></i> + 92 102 607 610</p>
+
+
+    </div>
+  </div>
+
+  <div class="copyrig">
+    <h5>Copyright © 2020 Home Tuition(Soha ghori)</h5>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
